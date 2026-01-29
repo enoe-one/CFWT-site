@@ -514,30 +514,31 @@ $stats = [
                             <div class="bg-gradient-to-br <?php echo $config['bg']; ?> rounded-lg p-4 sm:p-6 border-2 <?php echo $config['border']; ?> 
                                         <?php echo $maint['is_active'] ? 'ring-4 ring-yellow-500' : ''; ?> relative overflow-hidden">
                                 
-                                    <?php if ($maint['is_active']): ?>
-                                        <div class="absolute top-2 right-2 sm:top-4 sm:right-4">
-                                            <span class="bg-yellow-500 text-black px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold pulse-ring">
-                                                ● EN DIRECT
-                                            </span>
+                                <!-- Badge ACTIF -->
+                                <?php if ($maint['is_active']): ?>
+                                    <div class="absolute top-2 right-2 sm:top-4 sm:right-4">
+                                        <span class="bg-yellow-500 text-black px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold pulse-ring">
+                                            ● EN DIRECT
+                                        </span>
+                                    </div>
+                                    
+                                    <!-- Contrôle progression (si activé) -->
+                                    <?php if ($maint['show_progress_bar']): ?>
+                                        <div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4">
+                                            <form method="POST" class="flex items-center gap-2 bg-black bg-opacity-50 p-2 rounded-lg">
+                                                <input type="hidden" name="action" value="update_progress">
+                                                <input type="hidden" name="maintenance_id" value="<?php echo $maint['id']; ?>">
+                                                <input type="number" name="progress_percentage" 
+                                                       value="<?php echo $maint['progress_percentage']; ?>" 
+                                                       min="0" max="100" step="5"
+                                                       class="w-16 p-1 text-xs rounded bg-gray-700 text-white border border-gray-600">
+                                                <button type="submit" class="bg-blue-600 text-white px-2 py-1 rounded text-xs hover:bg-blue-700">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                            </form>
                                         </div>
-                                        
-                                        <!-- Contrôle progression (si activé) -->
-                                        <?php if ($maint['show_progress_bar']): ?>
-                                            <div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4">
-                                                <form method="POST" class="flex items-center gap-2 bg-black bg-opacity-50 p-2 rounded-lg">
-                                                    <input type="hidden" name="action" value="update_progress">
-                                                    <input type="hidden" name="maintenance_id" value="<?php echo $maint['id']; ?>">
-                                                    <input type="number" name="progress_percentage" 
-                                                           value="<?php echo $maint['progress_percentage']; ?>" 
-                                                           min="0" max="100" step="5"
-                                                           class="w-16 p-1 text-xs rounded bg-gray-700 text-white border border-gray-600">
-                                                    <button type="submit" class="bg-blue-600 text-white px-2 py-1 rounded text-xs hover:bg-blue-700">
-                                                        <i class="fas fa-check"></i>
-                                                    </button>
-                                                </form>
-                                            </div>
-                                        <?php endif; ?>
-                                    <?php else: ?>
+                                    <?php endif; ?>
+                                <?php endif; ?>
                                 
                                 <div class="flex flex-col gap-4">
                                     <!-- En-tête -->
