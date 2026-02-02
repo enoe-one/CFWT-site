@@ -44,8 +44,24 @@ try {
         INDEX idx_active (is_active),
         INDEX idx_type (maintenance_type)
     )");
+    
+    // Vérifier et ajouter les colonnes manquantes si la table existe déjà
+    $columns = $pdo->query("SHOW COLUMNS FROM maintenance_settings")->fetchAll(PDO::FETCH_COLUMN);
+    
+    if (!in_array('additional_info', $columns)) {
+        $pdo->exec("ALTER TABLE maintenance_settings ADD COLUMN additional_info TEXT");
+    }
+    if (!in_array('show_progress_bar', $columns)) {
+        $pdo->exec("ALTER TABLE maintenance_settings ADD COLUMN show_progress_bar BOOLEAN DEFAULT FALSE");
+    }
+    if (!in_array('progress_percentage', $columns)) {
+        $pdo->exec("ALTER TABLE maintenance_settings ADD COLUMN progress_percentage INT DEFAULT 0");
+    }
+    if (!in_array('start_time', $columns)) {
+        $pdo->exec("ALTER TABLE maintenance_settings ADD COLUMN start_time DATETIME");
+    }
 } catch (PDOException $e) {
-    // Table existe déjà
+    // Table existe déjà ou erreur
 }
 
 // Gestion des actions
