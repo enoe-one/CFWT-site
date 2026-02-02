@@ -7,6 +7,7 @@
     <title>Membres - CFWT</title>
     <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="css/all.min.css">
+    <link rel="canonical" href="https://cfwt.up.railway.app/members.php">
 </head>
 <body class="bg-gray-900">
     <?php include 'includes/header.php'; ?>
@@ -71,4 +72,5 @@
     <?php include 'includes/footer.php'; ?>
 </body>
 </html>
+
 
