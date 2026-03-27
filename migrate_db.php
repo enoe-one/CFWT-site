@@ -10,7 +10,7 @@ if (($_GET['secret'] ?? '') !== $secret) {
 
 // ⚠️  REMPLACE CES VALEURS par tes vraies DATABASE_URL Railway
 $OLD_DATABASE_URL = getenv('OLD_DATABASE_URL') ?: 'mysql://root:JwaAIaqRIRzIGarebfqimmiKHDfnARiE@mysql.railway.internal:3306/railway';
-$NEW_DATABASE_URL = getenv('NEW_DATABASE_URL') ?: getenv('DATABASE_URL') ?: '';
+$NEW_DATABASE_URL = getenv('NEW_DATABASE_URL') ?: getenv('mysql://root:bLiopnzwsahJVYcbTbTxYksPHDxXzqnV@mysql.railway.internal:3306/railway') ?: '';
 
 if (!$OLD_DATABASE_URL || !$NEW_DATABASE_URL) {
     die('<h2>❌ Configure OLD_DATABASE_URL et NEW_DATABASE_URL</h2>');
