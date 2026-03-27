@@ -34,7 +34,7 @@ if (($_GET['secret'] ?? '') !== $secret) {
 // ───────────────────────────────────────────────────────────
 
 // ⚠️  REMPLACE CES VALEURS par tes vraies DATABASE_URL Railway
-$OLD_DATABASE_URL = getenv('OLD_DATABASE_URL') ?: 'mysql://root:JwaAIaqRIRzIGarebfqimmiKHDfnARiE@mysql.railway.internal:3306/railway';
+$OLD_DATABASE_URL = getenv('OLD_DATABASE_URL') ?: 'mysql://root:JwaAIaqRIRzIGarebfqimmiKHDfnARiE@metro.proxy.rlwy.net:50858/railway';
 $NEW_DATABASE_URL = getenv('NEW_DATABASE_URL') ?: 'mysql://root:bLiopnzwsahJVYcbTbTxYksPHDxXzqnV@mysql.railway.internal:3306/railway';
 
 if (!$OLD_DATABASE_URL || !$NEW_DATABASE_URL) {
