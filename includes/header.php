@@ -73,7 +73,7 @@ $appearance = getAppearanceSettings($pdo);
                     <i class="fas fa-graduation-cap mr-1"></i> Diplômes
                 </a>
                 <a href="<?php echo SITE_URL; ?>/legions.php" class="text-white hover:text-gray-200 transition flex items-center">
-                    <i class="fas fa-shield-alt mr-1"></i> Légions
+                    <i class="fas fa-shield-alt mr-1"></i> Divisions
                 </a>
                 <a href="<?php echo SITE_URL; ?>/members.php" class="text-white hover:text-gray-200 transition flex items-center">
                     <i class="fas fa-users mr-1"></i> Membres
