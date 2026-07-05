@@ -21,7 +21,7 @@ if ($database_url) {
 
 // Configuration du site
 define('SITE_URL', getenv('RAILWAY_PUBLIC_DOMAIN') ? 'https://' . getenv('RAILWAY_PUBLIC_DOMAIN') : 'http://localhost');
-define('DISCORD_INVITE', 'https://discord.gg/RkhCy6we');
+define('DISCORD_INVITE', 'https://discord.gg/FWZXmnN45K');
 
 // Sécurité des sessions
 ini_set('session.cookie_httponly', 1);
