@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1019">
+
+<title>À vous tous, merci. — Enoe_one</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0b1019;
+    --gold: #c6a66a;
+    --gold-light: #e5d1a5;
+    --text: #e5e3de;
+    --muted: #a5a6aa;
+    --line: rgba(198,166,106,.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse at 50% 0%, #1b2a3c 0%, transparent 65%),
+        radial-gradient(ellipse at 50% 100%, #172130 0%, transparent 60%);
+    z-index: -1;
+}
+
+/* INTRODUCTION */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.logo {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid var(--gold);
+    background: #111b29;
+    box-shadow:
+        0 0 35px rgba(198,166,106,.15),
+        0 0 100px rgba(198,166,106,.08);
+    margin-bottom: 55px;
+}
+
+.hero-small {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--gold);
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(55px, 9vw, 105px);
+    line-height: 1;
+    color: var(--gold-light);
+}
+
+.hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-style: italic;
+    color: #c6c3bc;
+    margin-top: 25px;
+}
+
+.hero-line {
+    width: 65px;
+    height: 1px;
+    background: var(--gold);
+    margin: 40px auto;
+}
+
+.hero-intro {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.scroll {
+    margin-top: 85px;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #777f8a;
+}
+
+/* LETTER */
+
+.letter-section {
+    padding: 30px 20px 130px;
+}
+
+.letter {
+    max-width: 790px;
+    margin: auto;
+    position: relative;
+}
+
+.letter-header {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.letter-header .date {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.letter-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--gold-light);
+    margin-top: 20px;
+}
+
+.letter-header .divider {
+    width: 45px;
+    height: 1px;
+    background: var(--gold);
+    margin: 25px auto;
+}
+
+.letter-header p {
+    color: var(--muted);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.letter-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.9;
+    color: #d1d0cc;
+}
+
+.letter-body p {
+    margin-bottom: 27px;
+}
+
+.letter-body strong {
+    color: var(--gold-light);
+    font-weight: 600;
+}
+
+.greeting {
+    color: var(--gold-light);
+    font-size: 29px;
+    margin-bottom: 35px !important;
+}
+
+.dropcap::first-letter {
+    float: left;
+    font-size: 76px;
+    line-height: .8;
+    padding: 9px 12px 0 0;
+    color: var(--gold);
+}
+
+/* SOUVENIR PHOTO */
+
+.memory {
+    margin: 65px -35px;
+    text-align: center;
+}
+
+.memory img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: contain;
+    display: block;
+    border: 1px solid var(--line);
+    padding: 9px;
+    background: #111a27;
+    box-shadow: 0 20px 70px rgba(0,0,0,.3);
+}
+
+.memory figcaption {
+    font-family: 'Cormorant Garamond', serif;
+    color: #a9a39a;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 17px;
+}
+
+/* SPECIAL QUOTES */
+
+.quote {
+    margin: 65px 0;
+    padding: 35px 20px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+}
+
+.quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(25px, 4vw, 36px);
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--gold-light);
+}
+
+/* SIGNATURE */
+
+.signature {
+    margin-top: 80px;
+    padding-top: 35px;
+    border-top: 1px solid var(--line);
+}
+
+.signature p {
+    margin-bottom: 12px;
+}
+
+.signature-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: var(--gold-light);
+    margin-top: 35px;
+}
+
+.signature-role {
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* LAST WORD */
+
+.epilogue {
+    text-align: center;
+    padding: 110px 20px 130px;
+    background: linear-gradient(180deg, transparent, rgba(22,34,49,.7));
+}
+
+.epilogue-line {
+    width: 45px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 35px;
+}
+
+.epilogue h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 400;
+    color: var(--gold-light);
+    margin-bottom: 25px;
+}
+
+.epilogue p {
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #b7b6b1;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    color: #737c88;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+    .hero {
+        min-height: 85vh;
+    }
+
+    .logo {
+        width: 190px;
+        height: 190px;
+        margin-bottom: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 22px;
+    }
+
+    .letter-section {
+        padding: 20px 22px 90px;
+    }
+
+    .letter-body {
+        font-size: 19px;
+        line-height: 1.8;
+    }
+
+    .letter-header h2 {
+        font-size: 36px;
+    }
+
+    .memory {
+        margin: 45px 0;
+    }
+
+    .signature-name {
+        font-size: 40px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRODUCTION -->
+
+<header class="hero">
+    <div class="hero-content">
+
+        <img src="1.png"
+             alt="Logo de la CFWT"
+             class="logo">
+
+        <div class="hero-small">
+            Une histoire que je n'oublierai pas
+        </div>
+
+        <h1>À vous tous,<br>merci.</h1>
+
+        <div class="hero-subtitle">
+            Il est temps pour moi de tourner la page.
+        </div>
+
+        <div class="hero-line"></div>
+
+        <p class="hero-intro">
+            UN MESSAGE PERSONNEL D'ENOE_ONE
+        </p>
+
+        <div class="scroll">
+            ↓ &nbsp; PRENDRE LE TEMPS DE LIRE
+        </div>
+
+    </div>
+</header>
+
+
+<!-- LA LETTRE -->
+
+<main class="letter-section">
+
+    <article class="letter">
+
+        <header class="letter-header">
+
+            <div class="date">
+                Un dernier message
+            </div>
+
+            <h2>Une page se tourne.</h2>
+
+            <div class="divider"></div>
+
+            <p>
+                À tous ceux qui ont pris part à cette aventure.
+            </p>
+
+        </header>
+
+
+        <div class="letter-body">
+
+            <p class="greeting">
+                Bonjour à tous,
+            </p>
+
+            <p class="dropcap">
+                Je ne sais pas vraiment par où commencer.
+                Cela fait tellement longtemps que nous partageons
+                cette aventure que trouver les mots pour y mettre
+                un terme n'est pas quelque chose de facile.
+            </p>
+
+            <p>
+                Aujourd'hui, j'ai officiellement quitté la
+                <strong>Coalition Française de War Tycoon</strong>.
+                Ce n'est pas une décision que j'ai prise à la légère,
+                et encore moins quelque chose que je souhaite
+                annoncer simplement en quelques lignes sur Discord.
+            </p>
+
+            <p>
+                Je pense que cette aventure mérite mieux que cela.
+                Elle mérite qu'on prenne le temps de se souvenir
+                de ce que nous avons construit, de ceux qui étaient
+                présents et de tout ce que nous avons vécu ensemble.
+            </p>
+
+            <p>
+                Parce qu'avant d'être une coalition, des factions,
+                des grades ou un serveur Discord, la CFWT,
+                c'était avant tout une histoire humaine.
+            </p>
+
+
+            <p>
+                Je me souviens encore des débuts de la Nuke.
+                À cette époque, mon pseudo était <strong>Empreur64</strong>.
+                Nous étions simplement quelques joueurs :
+                Death_Angel, Sly_link, ThuturGame et moi-même.
+            </p>
+
+            <p>
+                Nous avions créé notre petite faction sans véritable
+                ambition. Nous ne connaissions pratiquement rien
+                de la communauté française de War Tycoon, des autres
+                factions ou des alliances déjà présentes.
+                Nous jouions simplement ensemble, sans imaginer
+                une seule seconde ce qui allait nous arriver.
+            </p>
+
+            <p>
+                Puis les mois ont passé. Nous avons recruté,
+                appris à jouer, progressé et rencontré de nouvelles
+                personnes. ThuturGame a fini par arrêter le jeu,
+                et nous nous sommes fixé un nouvel objectif :
+                devenir une faction qui aurait un véritable impact
+                sur War Tycoon.
+            </p>
+
+            <p>
+                C'est à ce moment-là que nous avons commencé
+                à comprendre l'importance de ce jeu, des factions,
+                des alliances et des personnes qui le faisaient vivre.
+                Et franchement, je crois que c'est aussi à ce moment
+                que nous nous sommes dit :
+                <strong>« Putain, on est dans la merde. »</strong>
+            </p>
+
+            <p>
+                Mais nous avons continué.
+                Death_Angel s'est perfectionné en avion,
+                Sly_link en tank et moi-même en hélicoptère.
+                Nous avons recruté des inconnus, rencontré
+                de nouveaux joueurs et progressivement atteint
+                les cinquante membres.
+            </p>
+
+            <p>
+                C'est là que nous avons rencontré l'ALBP,
+                dirigée par <strong>elotokyo</strong>.
+                Après de nombreuses discussions, nous avons décidé
+                de réunir nos communautés pour créer quelque chose
+                de plus grand : la Coalition Française de War Tycoon.
+            </p>
+
+            <p>
+                Je me souviens encore de cette période.
+                Nous imaginions les grades, les responsabilités,
+                les factions et tout le roleplay qui allait avec.
+
+                Death_Angel devenait général d'armée,
+                elotokyo et moi-même généraux de corps d'armée,
+                et Adamel et Sly_link généraux de division.
+
+                Nous avions créé toute une organisation militaire.
+                Avec le recul, nous nous étions peut-être un peu
+                emballés, mais qu'est-ce que c'était amusant !
+            </p>
+
+            <p>
+                Et ensuite, la coalition a grandi.
+                75 membres, puis 100, puis 125.
+
+                Je me souviens aussi de Max, qui nous avait simplement
+                fait remarquer que notre serveur Discord était moche.
+                Nous lui avions répondu que nous le savions,
+                mais que nous ne savions pas vraiment quoi faire.
+
+                Il a alors décidé de nous construire un serveur
+                magnifique. Et le résultat a largement dépassé
+                nos attentes.
+
+                Nous avons finalement atteint les 200 membres.
+                Quand je repense au petit groupe du début,
+                je trouve le chemin parcouru assez incroyable.
+            </p>
+
+
+            <!-- PHOTO SOUVENIR -->
+
+            <figure class="memory">
+
+                <img src="2.png"
+                     alt="Souvenir des membres de la coalition">
+
+                <figcaption>
+                    Quelques instants parmi tous ceux que je garderai en mémoire.
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+                Évidemment, tout n'a pas toujours été parfait.
+                Nous avons connu des désaccords, des problèmes,
+                des périodes compliquées et des moments où
+                les choses semblaient beaucoup moins simples.
+            </p>
+
+            <p>
+                Mais je crois que ce ne sont pas ces difficultés
+                qu'il faut retenir.
+
+                Ce que je retiens, c'est le chemin parcouru.
+                La progression de la Nuke, la création de la CFWT,
+                les rencontres, les événements, les batailles,
+                les discussions et tous ces moments où nous avons
+                simplement pris du plaisir à jouer ensemble.
+            </p>
+
+
+            <div class="quote">
+                <p>
+                    « Ce qui avait commencé comme un simple jeu
+                    est devenu une aventure que je n'aurais
+                    jamais imaginé vivre. »
+                </p>
+            </div>
+
+
+            <p>
+                Je voudrais également expliquer les raisons
+                de mon départ, parce que je pense que je vous le dois.
+            </p>
+
+            <p>
+                Durant tout ce temps, j'ai énormément investi
+                dans cette coalition. J'ai développé un premier site,
+                puis un deuxième. J'ai créé des formulaires,
+                un bot, des outils et tout ce que je pouvais
+                imaginer pour améliorer notre organisation.
+            </p>
+
+            <p>
+                Chaque fois que je pouvais apporter quelque chose,
+                je le faisais. Pas parce qu'on me l'imposait,
+                mais parce que j'avais envie de voir cette coalition
+                progresser.
+            </p>
+
+            <p>
+                Contrairement à ce que certains pourraient penser,
+                je n'ai pas quitté la CFWT parce que je ne l'aimais
+                plus ou parce que cette aventure ne comptait plus.
+                Bien au contraire.
+            </p>
+
+            <p>
+                Beaucoup d'événements se sont accumulés,
+                aussi bien dans ma vie personnelle que dans le jeu.
+                La pression est devenue trop importante et,
+                malgré mes efforts, je n'ai pas réussi à continuer
+                d'assumer mon rôle comme je l'aurais voulu.
+            </p>
+
+            <p>
+                J'ai fini par craquer.
+
+                Je n'ai pas réussi à assumer mon rôle jusqu'au bout,
+                et je tiens à présenter mes plus sincères excuses
+                à toutes les personnes que j'ai pu décevoir.
+                Je sais que certaines choses auraient pu être faites
+                différemment.
+            </p>
+
+            <p>
+                Mais j'ai pris cette décision avec une intention :
+                <strong>préserver ce à quoi je tenais.</strong>
+
+                Je tenais beaucoup trop à cette coalition et
+                aux personnes qui m'avaient accompagné pour
+                laisser les difficultés finir par détruire
+                ce que nous avions construit.
+            </p>
+
+            <p>
+                C'est pour cette raison que j'ai préféré prendre
+                du recul plutôt que de continuer dans des conditions
+                qui ne me permettaient plus d'assumer correctement
+                mes responsabilités.
+            </p>
+
+
+            <h2 style="
+                font-family:'Cormorant Garamond',serif;
+                font-weight:500;
+                color:var(--gold-light);
+                font-size:32px;
+                margin:65px 0 25px;
+            ">
+                À ceux que je n'oublierai pas.
+            </h2>
+
+            <p>
+                Je ne peux pas terminer cette lettre sans remercier
+                certaines personnes.
+            </p>
+
+            <p>
+                <strong>Death_Angel</strong>, merci d'avoir été là
+                depuis le début. Nous avons lancé cette aventure
+                ensemble, sans savoir où elle nous mènerait.
+                Merci pour ta confiance, pour tout ce que nous avons
+                construit et pour toutes ces années. Tu n'es peut-être pas le chef que nous attendions au départ, mais tu es celui dont nous avions besoin. 
+            </p>
+
+            <p>
+                <strong>elotokyo</strong>, merci pour nos discussions, nos moments de rire, pour la fusion avec l'ALBP et pour tout ce que nous
+                avons pu accomplir ensemble. Cette rencontre
+                a véritablement changé l'histoire de la Nuke.
+            </p>
+
+            <p>
+                <strong>Adamel</strong>, merci pour ton investissement,
+                ta présence et ton rôle dans cette coalition. Tu étais la personne en qui j'avais le plus confiance, et tu ne m'as jamais déçu. Quand je m'égarais, tu étais toujours là pour me le rappeler, à ta manière. 
+            </p>
+
+            <p>
+                <strong>Sly_link</strong>, merci d'avoir été présent
+                depuis les premiers instants. Bon, je te remercie un peu moins d'avoir arrêté, mais tu avais tes raisons et je les comprends. 
+            </p>
+
+            <p>
+                <strong>Max</strong>, merci pour ton travail sur
+                le serveur Discord. Tu as énormément contribué
+                à donner une nouvelle dimension à notre communauté. Même si tu ne le penses pas forcément, sache que j'ai totalement confiance en toi.
+            </p>
+
+            <p>
+                <strong>ThuturGame</strong>, merci également
+                pour avoir fait partie des débuts de la Nuke.
+                Même si nos chemins se sont séparés,
+                tu fais partie de cette histoire.
+            </p>
+
+            <p>
+                Je voudrais aussi remercier tous les membres
+                de l'état-major, les généraux, les officiers,
+                les responsables de factions et évidemment
+                l'ensemble des modérateurs.
+
+                Vous avez consacré du temps à faire fonctionner
+                cette coalition, à accueillir les nouveaux membres,
+                à régler les problèmes et à maintenir notre communauté.
+                Votre travail mérite d'être reconnu.
+            </p>
+
+            <p>
+                Et enfin, merci à tous les membres.
+
+                Ceux qui étaient présents au début, ceux qui nous
+                ont rejoints après la fusion, ceux qui sont arrivés
+                à 100, 150 ou 200 membres.
+
+                Que nous ayons beaucoup joué ensemble ou simplement
+                échangé quelques mots, vous avez tous contribué
+                à cette aventure.
+            </p>
+
+
+            <div class="quote">
+                <p>
+                    « La fin d'une histoire, le début d'une nouvelle. »
+                </p>
+            </div>
+
+
+            <p>
+                Maintenant, il est temps pour moi de prendre
+                un autre chemin.
+
+                Le développement de mes projets pour la CFWT
+                est interrompu. La mise à jour qui devait sortir
+                le 1er décembre ne verra malheureusement jamais
+                le jour, et ce site restera ici comme une archive
+                de tout ce que nous avons construit.
+            </p>
+
+            <p>
+                Mais je tiens à le préciser :
+                <strong>la CFWT ne s'arrête pas avec mon départ.</strong>
+
+                La coalition continuera d'exister, de grandir
+                et d'écrire sa propre histoire. Je lui souhaite
+                sincèrement de réussir et d'aller encore plus loin.
+            </p>
+
+            <p>
+                Si quelqu'un souhaite reprendre le développement
+                de ce site, poursuivre le travail commencé
+                et lui donner un nouvel avenir, j'en serais
+                véritablement honoré.
+            </p>
+
+            <p>
+                Et qui sait ? Peut-être qu'un jour je reviendrai.
+                Peut-être que nos chemins se croiseront à nouveau.
+                Je ne peux pas le savoir aujourd'hui.
+            </p>
+
+            <p>
+                Ce que je sais, en revanche, c'est que je ne regrette
+                absolument pas d'avoir vécu cette aventure.
+                Elle m'a appris beaucoup de choses, m'a permis
+                de rencontrer des personnes formidables et m'a
+                donné l'occasion de réaliser des projets que
+                je n'aurais probablement jamais imaginé mener à bien.
+            </p>
+
+            <p>
+                Je pars avec des regrets, certainement,
+                mais surtout avec beaucoup de reconnaissance.
+            </p>
+
+            <p>
+                Prenez soin de vous, prenez soin de cette coalition
+                et surtout, profitez de chaque instant.
+            </p>
+
+            <p>
+                Merci pour votre confiance, votre soutien,
+                votre patience et tous ces souvenirs.
+            </p>
+
+
+            <!-- SIGNATURE -->
+
+            <div class="signature">
+
+                <p>
+                    Avec toute ma reconnaissance,
+                </p>
+
+                <div class="signature-name">
+                    Enoe_one
+                </div>
+
+                <div class="signature-role">
+                    Empreur64 — Ancien administrateur de la CFWT
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</main>
+
+
+<!-- DERNIER MOT -->
+
+<section class="epilogue">
+
+    <div class="epilogue-line"></div>
+
+    <h2>« L'histoire de la CFWT ne s'écrit pas.
+Elle se vit. »</h2>
+
+    <p>
+        J'ai peut-être quitté la coalition,
+        mais je n'ai jamais quitté l'histoire
+        que nous avons écrite ensemble.
+    </p>
+
+    <div class="epilogue-line" style="margin-top:45px"></div>
+
+</section>
+
+
+<footer>
+    ENOE_ONE — EMPREUR64
+
+    <br><br>
+
+    « L'histoire de la CFWT ne s'écrit pas.
+Elle se vit. »
+Merci pour tout.
+</footer>
+
+</body>
+</html>
