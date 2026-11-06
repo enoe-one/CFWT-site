@@ -1,88 +1,149 @@
+<!-- ================================================= -->
+<!--                    LANGUAGE                       -->
+<!-- ================================================= -->
+
 <p align="center">
-  <a href="#-cfwt--coalition-française-de-war-tycoon">🇫🇷 Français</a>
-  |
-  <a href="#-cfwt--french-war-tycoon-coalition">🇬🇧 English</a>
+  <a href="#-français">🇫🇷 Français</a>
+  &nbsp; • &nbsp;
+  <a href="#-english">🇬🇧 English</a>
 </p>
-# 🇫🇷 Français | 🇬🇧 English
 
 ---
 
-# 🇫🇷 CFWT — Coalition Française de War Tycoon
+# 🇫🇷 Français
 
-<badge>PROJET ARCHIVÉ</badge>
+<div align="center">
 
-## ⚠️ Projet officiellement archivé
+# CFWT
+### Coalition Française de War Tycoon
 
-Ce dépôt ainsi que son développement sont désormais officiellement **archivés**.
+**ARCHIVES — FIN DU DÉVELOPPEMENT**
 
-À la suite de mon départ officiel de la Coalition Française de War Tycoon (CFWT), j'ai décidé de mettre définitivement fin au développement et à la maintenance de ce projet.
+*« Toute aventure a une fin, mais les souvenirs, eux, restent. »*
 
-La mise à jour initialement prévue pour le **1er décembre** ne verra malheureusement jamais le jour. Aucun nouveau contenu, fonctionnalité ou amélioration ne sera développé de ma part.
-
-C'est la fin d'un chapitre important.
-
-## 📜 Un dernier mot
-
-Je tiens à remercier sincèrement **Death_Angel**, ainsi que l'ensemble des membres de la coalition, pour cette expérience exceptionnelle.
-
-Le développement de la CFWT a représenté bien plus qu'un simple projet informatique. C'était une aventure humaine, faite de rencontres, de travail, de souvenirs et de nombreux moments inoubliables.
-
-Je suis sincèrement reconnaissant pour tout ce que nous avons accompli ensemble.
-
-Même si je prends mes distances aujourd'hui, je ne considère pas cette histoire comme définitivement terminée. **Peut-être qu'un jour, je reviendrai.**
-
-## 🤝 Une éventuelle reprise du projet
-
-Si quelqu'un souhaite reprendre ce projet et poursuivre son développement, j'en serais véritablement honoré.
-
-Tout le travail accompli n'a pas nécessairement à s'arrêter avec mon départ. J'espère que quelqu'un pourra un jour lui donner une nouvelle vie.
-
-## ✍️ Signature
-
-**Enoe_one**  
-*Ancien administrateur de la Coalition Française de War Tycoon (CFWT)*
-
-Merci pour tout.
+</div>
 
 ---
 
-# 🇬🇧 CFWT — French War Tycoon Coalition
+## 📢 Un dernier message
 
-<badge>ARCHIVED PROJECT</badge>
+C'est avec beaucoup d'émotion que j'annonce aujourd'hui l'archivage officiel de ce projet.
 
-## ⚠️ Project Officially Archived
+À la suite de mon départ de la **Coalition Française de War Tycoon (CFWT)**, le développement de ce site est désormais définitivement interrompu de ma part.
 
-This repository and its development are now officially **archived**.
+La mise à jour qui devait initialement voir le jour le **1er décembre** ne sera malheureusement jamais publiée. Les nouvelles fonctionnalités, améliorations et évolutions qui étaient prévues ne verront donc pas le jour.
 
-Following my official departure from the French War Tycoon Coalition (CFWT), I have decided to permanently discontinue all development and maintenance of this project.
+Ce projet, qui a représenté de nombreuses heures de travail et d'investissement, arrive aujourd'hui à son terme.
 
-The update originally scheduled for **December 1st** will unfortunately never be released. No further updates, features, or improvements will be developed by me.
+## 🤍 Merci pour cette aventure
 
-This marks the end of an important chapter.
+Je tiens particulièrement à remercier **Death_Angel**, ainsi que l'ensemble des membres de la coalition.
 
-## 📜 A Final Word
+Merci pour votre confiance, votre soutien, les moments partagés et cette expérience qui restera pour moi une étape importante.
 
-I would like to sincerely thank **Death_Angel**, as well as every member of the coalition, for this incredible experience.
+Au-delà du développement et de l'administration, la CFWT m'a permis de vivre une véritable aventure humaine. J'y ai consacré du temps, de l'énergie et beaucoup de motivation, et je ne regrette sincèrement rien de tout cela.
 
-Developing CFWT represented much more than just a software project. It was a human adventure, filled with encounters, hard work, memories, and countless unforgettable moments.
+Je garderai de cette expérience de très bons souvenirs.
 
-I am genuinely grateful for everything we accomplished together.
+## 🔄 Et pour la suite ?
 
-Although I am stepping away today, I do not consider this story permanently over. **Perhaps one day, I will return.**
+Même si je quitte aujourd'hui cette aventure, je ne ferme pas définitivement la porte.
 
-## 🤝 About Future Development
+**Peut-être qu'un jour, nos chemins se recroiseront et que je reviendrai.**
 
-If someone wishes to take over this project and continue its development, I would be truly honoured.
+Concernant ce projet, si quelqu'un souhaite reprendre son développement, poursuivre le travail commencé et lui donner un nouvel avenir, j'en serais véritablement honoré.
 
-The work accomplished here does not have to end with my departure. I hope someone will eventually give this project a new future.
-
-## ✍️ Signature
-
-**Enoe_one**  
-*Former Administrator of the French War Tycoon Coalition (CFWT)*
-
-Thank you for everything.
+Ce serait une belle manière de faire perdurer tout ce qui a été construit jusqu'ici.
 
 ---
 
-*CFWT — A chapter that ends, but a story that will not be forgotten.*
+<div align="center">
+
+### ✍️ Un dernier mot
+
+**Enoe_one**
+
+*Ancien administrateur de la Coalition Française de War Tycoon*
+
+---
+
+**Merci pour tout.**
+
+*Ce n'est pas simplement la fin d'un projet,  
+c'est la fin d'un chapitre de mon histoire.*
+
+</div>
+
+---
+
+# 🇬🇧 English
+
+<div align="center">
+
+# CFWT
+### French War Tycoon Coalition
+
+**ARCHIVED — DEVELOPMENT ENDED**
+
+*“Every journey must come to an end, but the memories remain.”*
+
+</div>
+
+---
+
+## 📢 One Last Message
+
+It is with mixed emotions that I officially announce the archiving of this project.
+
+Following my departure from the **French War Tycoon Coalition (CFWT)**, all development of this website has now been permanently discontinued on my part.
+
+The update originally scheduled for **December 1st** will unfortunately never be released. The new features, improvements and developments that were planned will therefore never see the light of day.
+
+This project, which represented countless hours of work and dedication, has now reached its end.
+
+## 🤍 Thank You for This Journey
+
+I would especially like to thank **Death_Angel**, as well as every member of the coalition.
+
+Thank you for your trust, your support, the moments we shared, and this experience that will remain an important part of my journey.
+
+Beyond development and administration, CFWT allowed me to experience a genuine human adventure. I invested time, energy and a great deal of motivation into this project, and I sincerely regret none of it.
+
+I will always keep wonderful memories of this experience.
+
+## 🔄 What Comes Next?
+
+Although I am stepping away from this adventure today, I am not closing the door forever.
+
+**Perhaps one day, our paths will cross again, and I will return.**
+
+As for this project, if anyone wishes to take over its development, continue the work that has been started and give it a new future, I would be truly honoured.
+
+It would be a wonderful way to keep everything we have built alive.
+
+---
+
+<div align="center">
+
+### ✍️ One Last Word
+
+**Enoe_one**
+
+*Former Administrator of the French War Tycoon Coalition*
+
+---
+
+**Thank you for everything.**
+
+*This is not simply the end of a project,  
+but the end of a chapter in my story.*
+
+</div>
+
+---
+
+<div align="center">
+
+<sub>CFWT — A story built together, remembered forever.</sub>
+
+</div>
