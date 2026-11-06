@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="#-cfwt--coalition-française-de-war-tycoon">🇫🇷 Français</a>
+  |
+  <a href="#-cfwt--french-war-tycoon-coalition">🇬🇧 English</a>
+</p>
 # 🇫🇷 Français | 🇬🇧 English
 
 ---
